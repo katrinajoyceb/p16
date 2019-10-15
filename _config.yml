@@ -1,4 +1,1 @@
-plugins:
-  - jekyll-remote-theme
-
 jekyll-remote-theme: mmistakes/minimal-mistakes
