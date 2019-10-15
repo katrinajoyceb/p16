@@ -1,2 +1,1 @@
-gem "github-pages", group: :jekyll_plugins
-remote_theme: "mmistakes/so-simple-theme"
+remote_theme: mmistakes/so-simple-theme
