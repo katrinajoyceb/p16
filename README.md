@@ -14,10 +14,10 @@
 
 |         | Team Member | Responsibilities  |
 | --- |:---:|:---:|
-| ![Picture](https://i.imgur.com/CH8zog6.jpg) | Hannah Estes | **Menu Content:** News Feed, Messages, Social Media and Music Player |
-|  ![Picture](https://i.imgur.com/jGlkQcz.jpg) | Hriddhi Kulkarni | **Always On Content:** Clock, Weather |
-| Picture | Tasnia Heya | **Always On Content:** Calender Events |
-| Picture | Jeffrey Lance | TBA |
+| ![Picture](https://i.imgur.com/CH8zog6.jpg) | Hannah Estes | **Github Repository**, **Menu Content:** News Feed, Messages, Social Media and Music Player |
+|  ![Picture](https://i.imgur.com/jGlkQcz.jpg) | Hriddhi Kulkarni | **Presentation Page**, **Always On Content:** Clock, Weather, Notifications |
+| Picture | Tasnia Heya | **Navigation:** Menu, Control Panel, **Always On Content:** Calender Events, **Other Features:** Webcam Capability |
+| Picture | Jeffrey Lance | **Health Content:** Weight, Sleep, Steps, Mirror Stats |
 | ![Picture](https://i.imgur.com/gXLSGLL.jpg) | Katrina Bueno | TBA |
 
 ## Github repository link:
