@@ -1,0 +1,12 @@
+Hi everyone
+
+Please find below links for weather data and health data using Cordova
+
+Weather:
+
+- https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-geolocation/ <br />
+Health:
+
+- https://www.sitepoint.com/using-healthkit-with-a-cordova-app/ <br />
+- https://github.com/EddyVerbruggen/HealthKit <br />
+- https://github.com/dariosalvi78/cordova-plugin-health <br />

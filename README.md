@@ -20,4 +20,7 @@
 | Picture | Jeffrey Lance | TBA |
 | ![Picture](https://i.imgur.com/gXLSGLL.jpg) | Katrina Bueno | TBA |
 
+## Github repository link:
+[Link](https://github.com/hannahmestes/P1.6)
 
+## Group members: 
