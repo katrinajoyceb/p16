@@ -17,7 +17,7 @@
 [Link](https://xd.adobe.com/view/703a7ae8-0687-4a09-45dd-cbd31300578d-060b/)
 
 ## Main functionality:
-Most important information will be displayed on the 'Always on content'
+Most important information will be displayed on the 'Always on content' <br />
 User friendly and customizable
 
 ## Presentation page:
@@ -27,8 +27,8 @@ User friendly and customizable
 [Link](https://github.com/hannahmestes/P1.6)
 
 ## Implementation status:
-Collected the data for individual tasks <br />
-Need to implement the source code 
+Collected the data required for individual tasks <br />
+Work on implementing the source code 
 
 ## Plan ahead:
 Implementing the interface using Cordova/p5.js <br />
