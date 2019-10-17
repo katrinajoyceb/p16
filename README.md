@@ -12,8 +12,4 @@
 [Link](https://github.com/hannahmestes/P1.6)
 
 ## Group members:
-Hannah Mestes <br />
-Hriddhi Kulkarni <br />
-Jeffrey Lance <br />
-Katrina Bueno <br />
-Tasnia Heya <br />
+Hannah Mestes 
