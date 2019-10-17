@@ -15,12 +15,10 @@
 |         | Team Member           | Responsibilities  |
 | ------------- |:-------------:| -----:|
 | ![Picture](https://i.imgur.com/CH8zog6.jpg) | Hannah Estes | **Menu Content:** News Feed, Messages, Social Media and Music Player |
-|  ![Picture](https://i.imgur.com/jGlkQcz.jpg) | Hriddhi Kulkarni | TBA |
-| Picture | Tasnia Heya | TBA |
+|  ![Picture](https://i.imgur.com/jGlkQcz.jpg) | Hriddhi Kulkarni | **Always On Content:** Clock, Weather |
+| Picture | Tasnia Heya | **Always On Content:** Calender Events |
 | Picture | Jeffrey Lance | TBA |
 | ![Picture](https://i.imgur.com/gXLSGLL.jpg) | Katrina Bueno | TBA |
 
 ## Github repository link:
 [Link](https://github.com/hannahmestes/P1.6)
-
-## Group members: 
