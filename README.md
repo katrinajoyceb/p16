@@ -18,7 +18,7 @@
 |  ![Picture](https://i.imgur.com/jGlkQcz.jpg) | Hriddhi Kulkarni | **Presentation Page** <br />**Always On Content:** Clock, Weather, Notifications |
 | ![Picture](https://i.imgur.com/LgE4Rd3.jpg)| Tasnia Heya | **Always On Content:** Calender Events <br /> **Navigation:** Menu, Control Panel <br />**Other Features:** Webcam Capabilities|
 | Picture | Jeffrey Lance | **Health Content:** Weight, Sleep, Steps,<br /> Mirror Stats|
-| ![Picture](https://i.imgur.com/gXLSGLL.jpg) | Katrina Bueno | TBA |
+| ![Picture](https://i.imgur.com/gXLSGLL.jpg) | Katrina Bueno | **Sketch/Wire Frames** <br /> **Other Features:** Light Source, Drag & Drop/Customization Feature| 
 
 ## Github repository link:
 [Link](https://github.com/hannahmestes/P1.6)
