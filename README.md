@@ -7,3 +7,16 @@
 
 ## Presentation page:
 [Link](https://hannahmestes.github.io/P1.6/)
+
+
+## Members & Responsibilities:
+
+|         | Team Member           | Responsibilities  |
+| ------------- |:-------------:| -----:|
+| ![Picture](https://i.imgur.com/CH8zog6.jpg) | Hannah Estes | **Menu Content:** News Feed, Messages, Social Media and Music Player |
+|  ![Picture](https://i.imgur.com/jGlkQcz.jpg) | Hriddhi Kulkarni | TBA |
+| Picture | Tasnia Heya | TBA |
+| Picture | Jeffrey Lance | TBA |
+| ![Picture](https://i.imgur.com/gXLSGLL.jpg) | Katrina Bueno | TBA |
+
+
