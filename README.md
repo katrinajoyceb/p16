@@ -15,7 +15,7 @@
 |         | Team Member | Responsibilities  |
 | --- |:---:|:---:|
 | ![Picture](https://i.imgur.com/CH8zog6.jpg) | Hannah Estes | **Menu Content:** News Feed, Messages, Social Media and Music Player |
-|  ![Picture](https://i.imgur.com/jGlkQcz.jpg) | Hriddhi Kulkarni | **Always On Content:** Clock, Weather |
+|  ![Picture](https://i.imgur.com/jGlkQcz.jpg) | Hriddhi Kulkarni | **Always On Content:** Clock, Weather, Notifications |
 | ![Picture](https://i.imgur.com/LgE4Rd3.jpg)| Tasnia Heya | **Always On Content:** Calender Events; **Navigation:** Menu, Control Panel; **Other Features:** Webcam Capabilities|
 | Picture | Jeffrey Lance | TBA |
 | ![Picture](https://i.imgur.com/gXLSGLL.jpg) | Katrina Bueno | TBA |
