@@ -17,7 +17,7 @@
 | ![Picture](https://i.imgur.com/CH8zog6.jpg) | Hannah Estes | **Github Repository** <br /> **Menu Content:** News Feed, Messages, Social Media and Music Player |
 |  ![Picture](https://i.imgur.com/jGlkQcz.jpg) | Hriddhi Kulkarni | **Presentation Page** <br />**Always On Content:** Clock, Weather, Notifications |
 | ![Picture](https://i.imgur.com/LgE4Rd3.jpg)| Tasnia Heya | **Always On Content:** Calender Events <br /> **Navigation:** Menu, Control Panel <br />**Other Features:** Webcam Capabilities|
-| Picture | Jeffrey Lance | **Health Content:** Weight, Sleep, Steps, Mirror Stats|
+| Picture | Jeffrey Lance | **Health Content:** Weight, Sleep, Steps,<br /> Mirror Stats|
 | ![Picture](https://i.imgur.com/gXLSGLL.jpg) | Katrina Bueno | TBA |
 
 ## Github repository link:
