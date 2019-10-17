@@ -11,4 +11,4 @@
 ## Github repository link:
 [Link](https://github.com/hannahmestes/P1.6)
 
-## Group members:
+## Group members: 
