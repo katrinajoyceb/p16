@@ -17,7 +17,7 @@
 [Link](https://xd.adobe.com/view/703a7ae8-0687-4a09-45dd-cbd31300578d-060b/)
 
 ## Main functionality:
-Most important information will be displayed on the 'Always on content' <br />
+Most important information will be displayed on the 'Always On content' <br />
 User friendly and customizable
 
 ## Implementation status:
