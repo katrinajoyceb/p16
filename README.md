@@ -13,7 +13,7 @@
 ## Members & Responsibilities:
 
 |         | Team Member | Responsibilities  |
-| --- |:---:|:---:|
+|:---:|:---:|:---:|
 | ![Picture](https://i.imgur.com/CH8zog6.jpg) | Hannah Estes | **Github Repository** <br /> **Menu Content:** News Feed, Messages, Social Media and Music Player |
 |  ![Picture](https://i.imgur.com/jGlkQcz.jpg) | Hriddhi Kulkarni | **Presentation Page** <br />**Always On Content:** Clock, Weather, Notifications |
 | Picture | Tasnia Heya | **Navigation:** Menu, Control Panel <br /> **Always On Content:** Calender Events <br /> **Other Features:** Webcam Capability |
