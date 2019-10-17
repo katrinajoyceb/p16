@@ -3,6 +3,7 @@
 # Personal Mirror
 
 ## Sketch:
+![Picture](https://i.imgur.com/ijfBol9.jpg) 
 [Link](https://xd.adobe.com/view/703a7ae8-0687-4a09-45dd-cbd31300578d-060b/)
 
 ## Presentation page:
