@@ -20,12 +20,6 @@
 Most important information will be displayed on the 'Always on content' <br />
 User friendly and customizable
 
-## Presentation page:
-[Link](https://hannahmestes.github.io/P1.6/)
-
-## Github repository link:
-[Link](https://github.com/hannahmestes/P1.6)
-
 ## Implementation status:
 Collected the data required for individual tasks <br />
 Work on implementing the source code 
@@ -33,3 +27,9 @@ Work on implementing the source code
 ## Plan ahead:
 Implementing the interface using Cordova/p5.js <br />
 Work on the development phase 
+
+## Presentation page:
+[Link](https://hannahmestes.github.io/P1.6/)
+
+## Github repository link:
+[Link](https://github.com/hannahmestes/P1.6)
