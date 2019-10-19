@@ -18,6 +18,7 @@
 
 ## Main functionality:
 Most important information will be displayed on the 'Always On content' <br />
+Access 'Health content' and 'Menu content' <br />
 User friendly and customizable
 
 ## Implementation status:
