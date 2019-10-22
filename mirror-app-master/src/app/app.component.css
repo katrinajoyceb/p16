@@ -1,0 +1,101 @@
+.container{
+    width: 1440px;
+    height: 1080px;
+    background-color: pink;
+
+}
+
+.mirror{
+    position: absolute;
+    margin: auto 0;
+    width: 1440px;
+    height: 1080px;
+
+}
+
+.one{
+    width: 315px; 
+    height: 1080px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    z-index: 1000000;
+}
+
+.two{
+    width: 315px; 
+    height: 1080px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    z-index: 1000000;
+    margin-left: 1125px;
+}
+
+.main{
+    width: 810px; 
+    height: 1080px;
+    background-color: transparent;
+    position: absolute;
+    z-index: 1000000;
+    margin-left: 315px;
+}
+
+.alwayson{
+    width: 810px;
+    height: 307px;
+    margin: auto;
+    margin-top: 10px;
+    border: 1px solid white;
+    position: absolute;  
+}
+
+.menu{
+    width: 158px;
+    height: 309px;
+    border-top-right-radius: 309px;
+    border-bottom-right-radius: 309px;
+    background-color: rgba(255, 255, 255, 0.146);
+    margin-top: 580px;
+    position: absolute;
+}
+
+.controlpanel{
+    width: 80px;
+    height: 417px;
+    background-color: rgba(255, 255, 255, 0.146);
+    position: absolute;
+    margin-top: 522px;
+    margin-left: 730px;
+    border-radius: 10px;
+
+}
+
+.clock{
+    width: 390px;
+    height: 307px;
+    background-color: rgba(255, 255, 255, 0.146);
+    margin: auto;
+    border-radius: 10px;
+    position: absolute;
+    margin-left: 10px;
+}
+
+.weather{
+    width: 390px;
+    height: 163px;
+    background-color: rgba(255, 255, 255, 0.146);
+    margin: auto;
+    border-radius: 10px;
+    position: absolute;
+    margin-left: 410px;
+}
+
+.schedule{
+    width: 390px;
+    height: 138px;
+    background-color: rgba(255, 255, 255, 0.146);
+    margin: auto;
+    border-radius: 10px;
+    position: absolute;
+    margin-left: 410px;
+    margin-top: 170px;
+}
