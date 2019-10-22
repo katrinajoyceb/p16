@@ -31,9 +31,13 @@ export class MusicComponent implements OnInit {
 
       s.setup = () => {
         s.createCanvas(390, 163).parent('music-canvas'); 
+        s.fill('rgba(0, 0, 0, 0.4)');
+        s.noStroke();
+        s.rect(0, 0, 390, 163, 15);
 
+        s.fill(255,255,255);
         s.textSize(32);
-        title = s.text('Truth Hurts - Lizzo', 65, 30);
+        title = s.text('Truth Hurts - Lizzo', 65, 40);
 
         s.createPlayButton();
         s.createPauseButton();
@@ -61,8 +65,7 @@ export class MusicComponent implements OnInit {
       }
 
       s.draw = () => {
-        //s.background(255);
-
+        //s.background(255, 255, 255, 2);
       };
 
 
