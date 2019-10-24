@@ -66,6 +66,8 @@ export class NewsComponent implements OnInit {
 
         s.fill(255,255,255);
         s.textSize(28);
+        s.textFont('SF-Pro');
+
         title = s.text('News for '+ this.today, 65, 50);
 
         s.textSize(22);

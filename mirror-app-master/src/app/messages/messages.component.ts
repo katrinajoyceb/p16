@@ -47,6 +47,7 @@ export class MessagesComponent implements OnInit {
 
         s.fill(255,255,255);
         s.textSize(28);
+        s.textFont('SF-Pro');
         title = s.text('Messages', 120, 40);
 
         button = s.createImg('../../assets/close.png', "play").parent('messages-canvas'); // create close button

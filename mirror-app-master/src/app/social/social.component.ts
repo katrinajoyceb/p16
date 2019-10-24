@@ -44,6 +44,7 @@ export class SocialComponent implements OnInit {
 
         s.fill(255,255,255);
         s.textSize(28);
+        s.textFont('SF-Pro');
         title = s.text('Twitter', 160, 40);
 
         button = s.createImg('../../assets/close.png', "close").parent('social-canvas'); // create close button

@@ -42,7 +42,8 @@ export class MusicComponent implements OnInit {
 
         s.fill(255,255,255);
         s.textSize(32);
-        title = s.text('Truth Hurts - Lizzo', 65, 40);
+        s.textFont('SF-Pro');
+        title = s.text('Truth Hurts - Lizzo', 50, 40);
 
         s.createPlayButton();
         s.createPauseButton();
