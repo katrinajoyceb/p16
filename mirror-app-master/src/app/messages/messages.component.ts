@@ -15,10 +15,11 @@ export class MessagesComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    let title;
-    let news1;
-    let news2;
-    let news3;
+    this.drawSketch();
+  }
+
+  drawSketch(){
+    let title, button;
 
     this.sketch = (s) => {
 
@@ -48,6 +49,10 @@ export class MessagesComponent implements OnInit {
         s.textSize(28);
         title = s.text('Messages', 120, 40);
 
+        button = s.createImg('../../assets/close.png', "play").parent('messages-canvas'); // create close button
+        button.position(340,20);
+        button.mousePressed(s.selfDestruct); 
+
         s.textSize(22);
         s.text('Kat', 40, 90); // message sender 1
         s.text('1-555-555-5555', 40, 190); // message sender 2
@@ -61,8 +66,8 @@ export class MessagesComponent implements OnInit {
       };
 
 
-      s.draw = () => {
-        //s.background(255, 255, 255, 2);
+      s.selfDestruct = () => {
+        s.remove();
       };
         
     }

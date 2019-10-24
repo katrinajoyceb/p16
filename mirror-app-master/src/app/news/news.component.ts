@@ -24,10 +24,11 @@ export class NewsComponent implements OnInit {
    }
 
   ngOnInit() {
-    let title;
-    let news1;
-    let news2;
-    let news3;
+    this.drawSketch();
+  }
+
+  public drawSketch(){
+    let title, news1, news2, news3, closeButton;
 
     this.sketch = (s) => {
 
@@ -58,7 +59,9 @@ export class NewsComponent implements OnInit {
         news3 = s.createImg('../../assets/news3.jpeg', "").parent('news-3');
         news3.position(30, 360);
 
-
+        closeButton = s.createImg('../../assets/close.png', "play").parent('news-canvas'); // create close button
+        closeButton.position(350,20);
+        closeButton.mousePressed(s.selfDestruct); 
 
 
         s.fill(255,255,255);
@@ -76,6 +79,10 @@ export class NewsComponent implements OnInit {
       s.draw = () => {
         //s.background(255, 255, 255, 2);
       };
+
+      s.selfDestruct = () => {
+        s.remove();
+      }
         
     }
 

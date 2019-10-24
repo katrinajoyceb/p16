@@ -14,9 +14,14 @@ export class MusicComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    this.drawSketch();
+  }
+
+  drawSketch(){
     let song;
     let playButton;
     let pauseButton;
+    let closeButton;
     let next;
     let prev;
     let title;
@@ -49,6 +54,9 @@ export class MusicComponent implements OnInit {
         next = s.createImg('../../assets/play-next-button.png', "").parent('prev');
         next.position(280,70);
 
+        closeButton = s.createImg('../../assets/close.png', "play").parent('music-canvas'); // create close button
+        closeButton.position(350,20);
+        closeButton.mousePressed(s.selfDestruct); 
 
       };
 
@@ -62,6 +70,10 @@ export class MusicComponent implements OnInit {
         pauseButton = s.createImg('../../assets/pause-button.png', "pause").parent('button');
         pauseButton.position(175,70);
         pauseButton.mousePressed(s.playMusic); 
+      }
+
+      s.selfDestruct = () => {
+        s.remove();
       }
 
       s.draw = () => {
