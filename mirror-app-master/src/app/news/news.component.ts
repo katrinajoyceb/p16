@@ -51,11 +51,11 @@ export class NewsComponent implements OnInit {
         news1.position(30, 90);
 
         s.rect(20, 215, 350, 120, 15); //news story 2
-        news2 = s.createImg('../../assets/news2.jpeg', "").parent('news-1');
+        news2 = s.createImg('../../assets/news2.jpeg', "").parent('news-2');
         news2.position(30, 225);
 
         s.rect(20, 350, 350, 120, 15); //news story 3
-        news3 = s.createImg('../../assets/news3.jpeg', "").parent('news-1');
+        news3 = s.createImg('../../assets/news3.jpeg', "").parent('news-3');
         news3.position(30, 360);
 
 
