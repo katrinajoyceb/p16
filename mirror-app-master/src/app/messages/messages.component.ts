@@ -53,15 +53,16 @@ export class MessagesComponent implements OnInit {
         button.position(340,20);
         button.mousePressed(s.selfDestruct); 
 
-        s.textSize(22);
-        s.text('Kat', 40, 90); // message sender 1
-        s.text('1-555-555-5555', 40, 190); // message sender 2
-        s.text('Mom', 40, 290); // message sender 3
-
         s.textSize(18);
         s.text('Can you pick up eggs at the store?', 40, 120);
         s.text('Hey!', 40, 220);
         s.text('I love you! Have a great day!', 40, 320);
+
+        s.textStyle(s.BOLD);
+        s.textSize(22);
+        s.text('Kat', 40, 90); // message sender 1
+        s.text('1-555-555-5555', 40, 190); // message sender 2
+        s.text('Mom', 40, 290); // message sender 3
 
       };
 
