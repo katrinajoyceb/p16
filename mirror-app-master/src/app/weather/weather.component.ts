@@ -67,8 +67,8 @@ export class WeatherComponent implements OnInit {
           var myCanvas = s.createCanvas(954, 398);
            temperature = s.int(json.main.temp);
            weather = json.weather[0].main;
-           high = json.main.temp_max;
-           low = json.main.temp_min;
+           high = s.int(json.main.temp_max);
+           low = s.int(json.main.temp_min);
            myCanvas.parent("weather");
 
 
