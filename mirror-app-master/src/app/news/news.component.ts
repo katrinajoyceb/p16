@@ -28,7 +28,7 @@ export class NewsComponent implements OnInit {
   }
 
   public drawSketch(){
-    let title, news1, news2, news3, closeButton;
+    let news1, news2, news3, closeButton;
 
     this.sketch = (s) => {
 
@@ -40,7 +40,7 @@ export class NewsComponent implements OnInit {
         s.createCanvas(390, 489).parent('news-canvas'); 
         s.fill('rgba(255, 255, 255, 0.3)');
         s.noStroke();
-        s.rect(0, 0, 390, 489, 15);
+        s.rect(0, 0, 390, 489, 15); // draw background rectangle
 
         s.fill('rgba(0, 0, 0, 0.4)');
         s.noStroke();
@@ -58,27 +58,20 @@ export class NewsComponent implements OnInit {
         news3 = s.createImg('../../assets/news3.jpeg', "").parent('news-3');
         news3.position(30, 360);
 
-        closeButton = s.createImg('../../assets/close.png', "play").parent('news-canvas'); // create close button
-        closeButton.position(350,20);
-        closeButton.mousePressed(s.selfDestruct); 
-
-
         s.fill(255,255,255);
         s.textSize(28);
         s.textFont('SF-Pro');
 
-        title = s.text('News for '+ this.today, 65, 50);
+        s.text('News for '+ this.today, 65, 50);
 
         s.textSize(22);
         s.text('Texas Tech Football 2020 Schedule Announced', 150, 100, 180, 80); // news title 1
         s.text('Texas Tech Basketball Is Awesome', 150, 235, 180, 80); // news title 2
         s.text('New Texas Tech Vet School To Open in 2021', 150, 370, 180, 80); // news title 3
 
-      };
-
-
-      s.draw = () => {
-        //s.background(255, 255, 255, 2);
+        closeButton = s.createImg('../../assets/close.png', "play").parent('news-canvas'); // create close button
+        closeButton.position(350,20);
+        closeButton.mousePressed(s.selfDestruct); 
       };
 
       s.selfDestruct = () => {

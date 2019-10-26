@@ -76,10 +76,6 @@ export class MusicComponent implements OnInit {
         s.remove();
       }
 
-      s.draw = () => {
-        //s.background(255, 255, 255, 2);
-      };
-
       s.playMusic = () => {
         if (song.isPlaying()) {
           playButton.show();
