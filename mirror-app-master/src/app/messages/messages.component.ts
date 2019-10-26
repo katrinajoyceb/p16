@@ -30,7 +30,7 @@ export class MessagesComponent implements OnInit {
 
       s.setup = () => {
         s.createCanvas(380, 360).parent('messages-canvas'); 
-        s.fill('rgba(0, 0, 0, 0.4)');
+        s.fill('rgba(255, 255, 255, 0.3)');
         s.noStroke();
         s.rect(0, 0, 380, 360, 15);
 

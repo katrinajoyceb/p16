@@ -28,7 +28,7 @@ export class SocialComponent implements OnInit {
 
       s.setup = () => {
         s.createCanvas(400, 300).parent('social-canvas'); 
-        s.fill('rgba(0, 0, 0, 0.4)');
+        s.fill('rgba(255, 255, 255, 0.3)');
         s.noStroke();
         s.rect(0, 0, 400, 300, 15);
 

@@ -35,10 +35,10 @@ export class MusicComponent implements OnInit {
       }
 
       s.setup = () => {
-        s.createCanvas(390, 163).parent('music-canvas'); 
+        s.createCanvas(390, 165).parent('music-canvas'); 
         s.fill('rgba(0, 0, 0, 0.4)');
         s.noStroke();
-        s.rect(0, 0, 390, 163, 15);
+        s.rect(0, 0, 390, 165, 15);
 
         s.fill(255,255,255);
         s.textSize(32);
@@ -58,20 +58,19 @@ export class MusicComponent implements OnInit {
         closeButton = s.createImg('../../assets/close.png', "play").parent('music-canvas'); // create close button
         closeButton.position(350,20);
         closeButton.mousePressed(s.selfDestruct); 
-
       };
 
       s.createPlayButton = () => {
         playButton = s.createImg('../../assets/play-arrow.png', "play").parent('button');
         playButton.position(175,70);
         playButton.mousePressed(s.playMusic); 
-      }
+      };
 
       s.createPauseButton = () => {
         pauseButton = s.createImg('../../assets/pause-button.png', "pause").parent('button');
         pauseButton.position(175,70);
         pauseButton.mousePressed(s.playMusic); 
-      }
+      };
 
       s.selfDestruct = () => {
         s.remove();
@@ -80,7 +79,6 @@ export class MusicComponent implements OnInit {
       s.draw = () => {
         //s.background(255, 255, 255, 2);
       };
-
 
       s.playMusic = () => {
         if (song.isPlaying()) {

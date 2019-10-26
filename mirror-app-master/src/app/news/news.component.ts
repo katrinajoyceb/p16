@@ -33,13 +33,12 @@ export class NewsComponent implements OnInit {
     this.sketch = (s) => {
 
       s.preload = () => {
-
         s.frameRate(60);
       }
 
       s.setup = () => {
         s.createCanvas(390, 489).parent('news-canvas'); 
-        s.fill('rgba(0, 0, 0, 0.4)');
+        s.fill('rgba(255, 255, 255, 0.3)');
         s.noStroke();
         s.rect(0, 0, 390, 489, 15);
 
