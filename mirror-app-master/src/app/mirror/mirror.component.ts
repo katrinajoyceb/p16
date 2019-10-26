@@ -18,7 +18,12 @@ export class MirrorComponent implements OnInit {
       }
 
       s.setup = () => {
-        var myCanvas = s.createCapture(1440,1080);
+        let constraints = {
+          video: {
+          },
+          audio: false
+        };
+        var myCanvas = s.createCapture(constraints);
         myCanvas.size(1440,1080)
         myCanvas.parent("mirror");
 
