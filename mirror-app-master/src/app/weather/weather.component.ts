@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import * as p5 from 'p5';
- 
-
 
 @Component({
   selector: 'app-weather',
@@ -9,8 +7,6 @@ import * as p5 from 'p5';
   styleUrls: ['./weather.component.css']
 })
 export class WeatherComponent implements OnInit {
-
-
 
   constructor() { }
 
@@ -70,7 +66,6 @@ export class WeatherComponent implements OnInit {
            high = s.int(json.main.temp_max);
            low = s.int(json.main.temp_min);
            myCanvas.parent("weather");
-
 
       };
 
