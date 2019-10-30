@@ -18,6 +18,7 @@ export class WeatherComponent implements OnInit {
       let low = "";
       let json;
      
+      /* Weather parameters */
       let thunderstorm;
       let drizzle;
       let rain;
