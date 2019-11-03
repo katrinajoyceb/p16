@@ -38,7 +38,11 @@ The mirror performs basic functionalities like displaying <br />
 * Time
 * Weather 
 * Personalized news feed, text messages, social media notifications
-* Provides health related information
+
+The mirror also provides health related information like <br />
+* Number of hours slept
+* Current body weight
+* Daily actitivy data like exercise and number of steps walked
 
 The mirror also performs other functionalities like <br />
 * Drag and drop widget icons 
@@ -50,6 +54,8 @@ The mirror also performs other functionalities like <br />
 ## Why our design is different:
 * Applied Golden rules of interface design principles 
 * Adhered to the less than 7 rule and rule of thirds
+* Customizing icon location using 'Drag and drop' option 
+* View the interface in dark mode
 
 ## Presentation page:
 [Link](https://hannahmestes.github.io/P1.6/)
