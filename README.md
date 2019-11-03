@@ -38,7 +38,8 @@ The mirror performs basic functionalities like displaying <br />
 * Time
 * Weather 
 * Personalized news feed, text messages, social media notifications
-* Provides health related information<br />
+* Provides health related information
+
 The mirror also performs other functionalities like <br />
 * Drag and drop widget icons 
 
