@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import * as p5 from 'p5';
+ 
+
 
 @Component({
   selector: 'app-date',
@@ -7,9 +10,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DateComponent implements OnInit {
 
+  public now: Date = new Date();
+  
+
   constructor() { }
 
   ngOnInit() {
   }
 
 }
+
+
+
