@@ -55,9 +55,9 @@ export class MusicComponent implements OnInit {
         next = s.createImg('../../assets/play-next-button.png', "").parent('prev');
         next.position(280,70);
 
-        closeButton = s.createImg('../../assets/close.png', "play").parent('music-canvas'); // create close button
-        closeButton.position(350,20);
-        closeButton.mousePressed(s.selfDestruct); 
+        // closeButton = s.createImg('../../assets/close.png', "play").parent('music-canvas'); // create close button
+        // closeButton.position(350,20);
+        // closeButton.mousePressed(s.selfDestruct); 
       };
 
       s.createPlayButton = () => {

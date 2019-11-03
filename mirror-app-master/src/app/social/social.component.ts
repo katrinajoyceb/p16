@@ -56,9 +56,9 @@ export class SocialComponent implements OnInit {
         s.text('Donald J. Trump', 110, 90); // social sender 1
         s.text('Twitter Bot', 110, 210); // social sender 2
 
-        button = s.createImg('../../assets/close.png', "close").parent('social-canvas'); // create close button
-        button.position(340,20);
-        button.mousePressed(s.selfDestruct); 
+        // button = s.createImg('../../assets/close.png', "close").parent('social-canvas'); // create close button
+        // button.position(340,20);
+        // button.mousePressed(s.selfDestruct); 
       };
 
 

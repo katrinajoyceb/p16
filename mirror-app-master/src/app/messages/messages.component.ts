@@ -61,9 +61,9 @@ export class MessagesComponent implements OnInit {
         s.text('1-555-555-5555', 40, 190); // message sender 2
         s.text('Mom', 40, 290); // message sender 3
 
-        button = s.createImg('../../assets/close.png', "play").parent('messages-canvas'); // create close button
-        button.position(340,20);
-        button.mousePressed(s.selfDestruct); 
+        // button = s.createImg('../../assets/close.png', "play").parent('messages-canvas'); // create close button
+        // button.position(340,20);
+        // button.mousePressed(s.selfDestruct); 
       };
 
       s.selfDestruct = () => {

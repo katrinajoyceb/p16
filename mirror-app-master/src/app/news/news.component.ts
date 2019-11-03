@@ -69,9 +69,9 @@ export class NewsComponent implements OnInit {
         s.text('Texas Tech Basketball Is Awesome', 150, 235, 180, 80); // news title 2
         s.text('New Texas Tech Vet School To Open in 2021', 150, 370, 180, 80); // news title 3
 
-        closeButton = s.createImg('../../assets/close.png', "play").parent('news-canvas'); // create close button
-        closeButton.position(350,20);
-        closeButton.mousePressed(s.selfDestruct); 
+        // closeButton = s.createImg('../../assets/close.png', "play").parent('news-canvas'); // create close button
+        // closeButton.position(350,20);
+        // closeButton.mousePressed(s.selfDestruct); 
       };
 
       s.selfDestruct = () => {
