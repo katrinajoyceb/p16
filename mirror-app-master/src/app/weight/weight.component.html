@@ -1,3 +1,31 @@
-<p>
-  weight works!
-</p>
+<div class = "weight-container" wmAnimate="fadeInDown" speed="fast">
+  <svg class = "top-icon" style="width:24px;height:24px" viewBox="0 0 24 24">
+      <path fill="#ffffff" d="M5,2H19A2,2 0 0,1 21,4V20A2,2 0 0,1 19,22H5A2,2 0 0,1 3,20V4A2,2 0 0,1 5,2M12,4A4,4 0 0,0 8,8H11.26L10.85,5.23L12.9,8H16A4,4 0 0,0 12,4M5,10V20H19V10H5Z" />
+  </svg>
+  <div class = "weight-chart-container">
+      <canvas baseChart
+          [datasets]="lineChartData"
+          [labels]="lineChartLabels"
+          [options]="lineChartOptions"
+          [chartType]="lineChartType"
+          [colors]="colors"
+          [plugins]="lineChartPlugins">
+      </canvas>
+  </div>
+  <div>
+    <p id="weight-stat-text"><mat-icon class = "text-icon" aria-hidden="true">
+      accessibility_new
+    </mat-icon>
+      Weight Today:
+      <span id="weight-stat-num">171</span></p>
+    <p id="weight-stat-text"><mat-icon class = "text-icon" aria-hidden="true">
+      trending_flat
+      </mat-icon>
+    Change Since Yesterday:
+      <span id="weight-stat-num">-3</span></p>
+    <p id="weight-stat-text"><svg class = "svg-icon" style="width:24px;height:24px" viewBox="0 0 24 24">
+        <path d="M9,10V12H7V10H9M13,10V12H11V10H13M17,10V12H15V10H17M19,3A2,2 0 0,1 21,5V19A2,2 0 0,1 19,21H5C3.89,21 3,20.1 3,19V5A2,2 0 0,1 5,3H6V1H8V3H16V1H18V3H19M19,19V8H5V19H19M9,14V16H7V14H9M13,14V16H11V14H13M17,14V16H15V14H17Z" />
+    </svg>Weekly Average:
+      <span id="weight-stat-num">172</span></p>
+  </div>
+</div>
