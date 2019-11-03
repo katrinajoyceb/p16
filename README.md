@@ -30,22 +30,25 @@ Implementing the interface using Cordova/p5.js <br />
 Work on the development phase 
 
 ## Final Implementation:
-Integrated P5.js with an Angular project
+Integrated P5.js with an Angular project 
 
 The mirror performs basic functionalities like displaying <br />
-. Calender events
-. Clock
-. Time
-. Weather 
-. Personalized news feed, text messages, social media notifications
-. Provides health related information<br />
+* Calender events
+* Clock
+* Time
+* Weather 
+* Personalized news feed, text messages, social media notifications
+* Provides health related information<br />
 The mirror also performs other functionalities like <br />
-. Drag and drop widget icons 
+* Drag and drop widget icons 
+
+## Final interface gif:
+![ezgif com-optimize (8)](https://user-images.githubusercontent.com/18117167/68093300-d1634880-fe59-11e9-9662-84fe64e5f309.gif)
 
 
 ## Why our design is different:
-Applied Golden rules of interface design principles 
-Adhered to the less than 7 rule and rule of thirds
+* Applied Golden rules of interface design principles 
+* Adhered to the less than 7 rule and rule of thirds
 
 ## Presentation page:
 [Link](https://hannahmestes.github.io/P1.6/)
