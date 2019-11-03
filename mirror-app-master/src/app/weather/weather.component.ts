@@ -8,9 +8,13 @@ import * as p5 from 'p5';
 })
 export class WeatherComponent implements OnInit {
 
+  temp: number;
+
   constructor() { }
 
   ngOnInit() {
+
+    let temp;
     const sketch = (s) => {
       let temperature = 0;
       let weather = "";
@@ -18,7 +22,6 @@ export class WeatherComponent implements OnInit {
       let low = "";
       let json;
      
-      /* Weather parameters */
       let thunderstorm;
       let drizzle;
       let rain;
@@ -34,6 +37,11 @@ export class WeatherComponent implements OnInit {
       let tornado;
       let clouds;
       let clear;
+      let bold;
+      let semi;
+      let reg;
+      let thin;
+      let back;
 
 
       s.preload = () => {
@@ -41,6 +49,10 @@ export class WeatherComponent implements OnInit {
         let url = "https:api.openweathermap.org/data/2.5/weather?q=Lubbock&units=imperial&APPID=e812164ca05ed9e0344b89ebe273c141";
         json = s.loadJSON(url);
        
+        thin = s.loadFont('../../assets/SF-Pro-Display-Thin.otf');
+        reg = s.loadFont('../../assets/SF-Pro-Text-Regular.otf');
+        semi = s.loadFont('../../assets/SF-Pro-Display-Semibold.otf');
+        bold = s.loadFont('../../assets/SF-Pro-Display-Bold.otf');
 
         thunderstorm = s.loadImage("https://i.imgur.com/R7kd3Gu.png");
         drizzle = s.loadImage("https://i.imgur.com/ytCplOo.png");
@@ -55,24 +67,33 @@ export class WeatherComponent implements OnInit {
         ash = s.loadImage("https://i.imgur.com/3q8k6g3.png");
         squall = s.loadImage("https://i.imgur.com/swjlqhL.png");
         tornado = s.loadImage("https://i.imgur.com/mHzgNau.png");
-        clouds = s.loadImage("https://i.imgur.com/NlLBaJ8.png");
-        clear = s.loadImage("https://i.imgur.com/NndQos2.png");
+        clouds = s.loadImage("assets/clouds.png");
+        clear = s.loadImage("assets/clear.png");
+        back = s.loadImage('assets/back.png');
 
     }
 
       s.setup = () => {
-          var myCanvas = s.createCanvas(954, 398);
+          //var myCanvas = s.createCanvas(954, 398);
+          var myCanvas = s.createCanvas(480, 360);
            temperature = s.int(json.main.temp);
+           this.temp = temperature;
+          
            weather = json.weather[0].main;
            high = s.int(json.main.temp_max);
            low = s.int(json.main.temp_min);
            myCanvas.parent("weather");
+           
 
       };
 
       s.draw = () => {
-        s.background('rgba(255, 255, 255, 0.3)');
+        
+        
+
         s.fill(255);
+       
+        //s.rect(100,50,200,60);
 
 
         if (weather === 'Thunderstorm')
@@ -129,54 +150,62 @@ export class WeatherComponent implements OnInit {
          }
         else if(weather === 'Clouds')
          {
-           s.image(clouds, -20, 90, 340, 320);
+           s.image(clouds, 50, -30, 270, 250);
          }
         else
          {
-           s.image(clear, 30, 120, 240, 240);
+           s.image(clear, 170, 0, 150, 150);
          }
         
+        // s.textSize(90);
+        // s.textSize(60);
+         s.stroke('#222222');
+        // s.textFont(reg);
+        // // s.strokeWeight(2);
+        // // s.textFont(thin);
+       
+        
+        
+       
+        s.textSize(25);
+        // // s.stroke('#FFFFFF');
+        // // s.strokeWeight(3);
+        
+        
+        // // s.stroke('#FFFFFF');
+        // // s.strokeWeight(0);
+        // // s.textFont('SF-Pro');
+        
+         s.text(weather, 330, 150);
+         s.textSize(16);
+         s.text("H: "+ high + "\xB0" + " / " + "L: " + low + "\xB0", 25, 150);
+        
 
-        s.textSize(100);
-        s.stroke('#222222');
-        s.strokeWeight(3);
-        s.textFont('SF Pro Display - Bold');
-        s.text("Today's weather", 60, 100);
+       
+         s.textSize(90);
+         s.strokeWeight(2);
+        // // s.stroke('#FFFFFF');
+        // // s.textFont('SF-Pro');
+         s.text(temperature + "\xB0", 25, 115);
         
-        s.textSize(50);
-        s.stroke('#FFFFFF');
-        s.strokeWeight(1);
-        s.textFont('SF Pro Display');
-        s.text("Lubbock, TX", 300, 200);
+        // s.textSize(50);
+        // s.stroke('#FFFFFF');
+        // s.textFont('SF-Pro');
+        // s.text("\xB0", 360, 125);
         
-        s.textSize(30);
-        s.stroke('#FFFFFF');
-        s.strokeWeight(0);
-        s.textFont('SF Pro Display');
-        s.text("Forecast: " + weather, 300, 250);
-        s.text("H: "+ high + "\xB0" + " / " + "L: " + low + "\xB0", 300, 300);
-        
-        s.textSize(160);
-        s.stroke('#FFFFFF');
-        s.textFont('SF Pro Display - Semibold');
-        s.text(temperature, 640, 290);
-        
-        s.textSize(160);
-        s.stroke('#FFFFFF');
-        s.textFont('SF Pro Display - Thin');
-        s.text("\xB0", 810, 290);
-        
-        s.textSize(120);
-        s.stroke('#FFFFFF');
-        s.textFont('SF Pro Display ');
-        s.text("F", 880, 290);
+        // s.textSize(60);
+        // // s.stroke('#FFFFFF');
+        // // s.textFont('SF-Pro');
+        // s.text("F", 330, 145);
 
         //  s.background(0);
         //  s.rect(100, 100, 100, 100);
+        
       };
     }
 
     let canvas = new p5(sketch);
+console.log(this.temp);
   }
 
 }
