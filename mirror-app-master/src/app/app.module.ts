@@ -18,6 +18,13 @@ import { SleepComponent } from './sleep/sleep.component';
 import { StepsComponent } from './steps/steps.component';
 import { MirrorstatsComponent } from './mirrorstats/mirrorstats.component';
 import { LightsourceComponent } from './lightsource/lightsource.component';
+import { ActivityComponent } from './activity/activity.component';
+import { DateComponent } from './date/date.component';
+import { HealthComponent } from './health/health.component';
+import { HealthCategoriesComponent } from './health-categories/health-categories.component';
+import { MirrorTimeComponent } from './mirror-time/mirror-time.component';
+import { OverviewComponent } from './overview/overview.component';
+import { ScheduleComponent } from './schedule/schedule.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +44,14 @@ import { LightsourceComponent } from './lightsource/lightsource.component';
     SleepComponent,
     StepsComponent,
     MirrorstatsComponent,
-    LightsourceComponent
+    LightsourceComponent,
+    ActivityComponent,
+    DateComponent,
+    HealthComponent,
+    HealthCategoriesComponent,
+    MirrorTimeComponent,
+    OverviewComponent,
+    ScheduleComponent
   ],
   imports: [
     BrowserModule
