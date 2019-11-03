@@ -57,7 +57,7 @@ The mirror also performs other functionalities like <br />
 * Applied Golden rules of interface design principles 
 * Adhered to the less than 7 rule and rule of thirds
 * Customizing icon location using 'Drag and drop' option 
-* View the interface in dark mode
+* Use the interface in dark mode
 
 ## Presentation page:
 [Link](https://hannahmestes.github.io/P1.6/)
