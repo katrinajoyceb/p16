@@ -38,6 +38,8 @@ The mirror performs basic functionalities like displaying <br />
 * Time
 * Weather 
 * Personalized news feed, text messages, social media notifications
+* Play music
+* Time spent using the mirror contents
 
 The mirror also provides health related information like <br />
 * Number of hours slept
