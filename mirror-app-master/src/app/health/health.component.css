@@ -1,0 +1,14 @@
+.content{
+  margin-top: 10px;
+  width: 480px;
+  height: 250px;
+  overflow-y: scroll;
+  border-radius: 20px;
+  
+}
+
+.content::-webkit-scrollbar { 
+  display: none; 
+} 
+
+
