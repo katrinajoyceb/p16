@@ -37,10 +37,10 @@ export class ControlComponent implements OnInit {
 
       s.draw = () => {
        
-        s.strokeWeight(0);
-        let c = s.color(120,120,120,100);
-        s.fill(c);    
-        s.image(image_round, 10,5 ,60,60);
+        // s.strokeWeight(0);
+        // let c = s.color(120,120,120,100);
+        // s.fill(c);    
+        // s.image(image_round, 10,5 ,60,60);
         s.textSize(14);
         s.fill(255, 255, 255);
 

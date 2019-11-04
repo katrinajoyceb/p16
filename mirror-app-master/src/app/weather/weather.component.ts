@@ -154,7 +154,7 @@ export class WeatherComponent implements OnInit {
          }
         else
          {
-           s.image(clear, 170, 0, 150, 150);
+           s.image(clear, 170, 10, 150, 150);
          }
         
         // s.textSize(90);
@@ -186,6 +186,10 @@ export class WeatherComponent implements OnInit {
          s.strokeWeight(2);
         // // s.stroke('#FFFFFF');
         // // s.textFont('SF-Pro');
+        s.fill(0);
+         s.text(temperature + "\xB0", 30, 120);
+        
+         s.fill(255);
          s.text(temperature + "\xB0", 25, 115);
         
         // s.textSize(50);

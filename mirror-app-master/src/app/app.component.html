@@ -1,18 +1,90 @@
-<div class="container">
-  <div class="one"></div>
-  <div class="two"></div>
+<div class="one" [@lights] = "light ? 'on' : 'off'"></div>
+<div class="two" [@lights] = "light ? 'on' : 'off'"></div>
+
+<div class="container" > 
   <div class="main">
     <div class="alwayson">
-      <div class="clock">insert clock component here</div>
-      <div class="weather"></div>
-      
-      <div class="schedule"></div>
+      <div cdkDrag>
+         
+      <div class="clock" wmAnimate="fadeInLeft" speed="slow"><app-clock></app-clock></div>
+     <div class="date" wmAnimate="fadeInLeft" speed="slow" ><app-date></app-date></div>
+</div>
+
+<div cdkDrag>
+  <div class="weather" wmAnimate="fadeInRight" speed="slow" ><h4 class="today"></h4><app-weather></app-weather></div>
+  <div class="day" wmAnimate="fadeInRight" speed="slow" >{{ now | date:'EEEE' }}</div>
+</div>
+
+<div class="huh">
+  <div class="schedule" cdkDrag wmAnimate="fadeInDown" > 
+    <div class="events"><h1>Upcoming Events</h1>
+      <app-schedule></app-schedule>
     </div>
-    <div class="menu">insert menu <br />component here</div>
-    <div class="controlpanel">insert control panel here</div>
+    <div class="notifications">
+      <h1>Notifications</h1>
+      <app-notifications></app-notifications>
+    </div>        
+  </div>
+</div>
+</div>
+
+
+<button class="hidemenu" wmAnimate="fadeInRight" speed="slow" (click)='hideMenu()'>toggle menu</button>
+    <div wmAnimate="fadeInRight" speed="slow" cdkDragLockAxis="y" cdkDrag *ngIf="menu">
+       <div class="menu" [@menuChoice] = "stateName" ></div>
+
+    <div class="choices" >
+        <div class="notif1"></div>
+        <div class="notif2"></div>
+        <div class="notif3"></div>
+        <button class="healthb" (click)='show("health")'><h1>health</h1></button>
+        <button class="newsb"  (click)='show("news")'><h1>news</h1></button>
+        <button class="messageb"  (click)='show("message")'><h1>messages</h1></button>
+        <button class="socialb" (click)='show("social")'><h1>social</h1></button>
+        <button class="musicb" (click)='show("music")'><h1>music</h1></button>
+    </div>
+    </div>
+
+   
+
+
+<div class="swipe" wmAnimate="fadeInUp" (click)="control=true" *ngIf="!control" speed="normal">Touch For Settings</div>
+    <div class="controlpanel"wmAnimate="fadeInUp" speed="fast"  *ngIf="control" cdkDrag>
+        <div class="closecontrol close" (click)="control=false"></div>
+      
+        <button class="light" (click)="turnLight()" [@touched] = "light ? 'on' : 'off'"></button>  
+      <app-control></app-control>
+    
+    </div>
+    
+   
+      
+     <div class="health" wmAnimate="fadeInLeft" speed="normal" *ngIf="health" cdkDrag>
+        <div class="close" (click)='hide("health")'></div>
+       <app-health></app-health>
+    </div> 
+     <div class="news" wmAnimate="fadeInLeft" speed="normal" *ngIf="news" cdkDrag>
+        <div class="close" (click)='hide("news")'></div>
+       <app-news></app-news>
+    </div>
+     <div class="message" wmAnimate="fadeInLeft" speed="normal" *ngIf="message" cdkDrag>
+        <div class="close" (click)='hide("message")'></div>
+       <app-messages></app-messages>
+    </div>
+     <div class="social" wmAnimate="fadeInLeft" speed="normal" *ngIf="social" cdkDrag>
+        <div class="close" (click)='hide("social")'></div>
+       <app-social></app-social>
+    </div>
+     <div class="music" wmAnimate="fadeInLeft" speed="normal" *ngIf="music" cdkDrag>
+        <div class="close" (click)='hide("music")'></div>
+       <app-music></app-music>
+    </div>
+  
   </div>
 
-    <div class="mirror">
+  
+
+    <div class="mirror" >
       <app-mirror></app-mirror>
     </div>
   </div>
