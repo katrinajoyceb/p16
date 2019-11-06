@@ -58,6 +58,59 @@ import {
       })),
       transition('* => *', animate('500ms ease')),
    
+    ]),
+    trigger('darkmode', [
+      state('on', style({
+        background: ' rgb(0, 0, 0, 0.6 )',
+        
+      })),
+      state('off',   style({
+        background: ' rgb(255, 255, 255, 0.3 )',
+        
+      })),
+      transition('* => *', animate('500ms ease')),
+   
+    ]),
+    trigger('darkmode2', [
+      state('on', style({
+        opacity: 1,
+        background: 'linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 50%, rgba(0,0,0,0) 84%, rgba(0,0,0,1) 100%, rgba(0,0,0,0) 100%)'
+        
+      })),
+      state('off',   style({
+        opacity: 0,
+        
+        
+      })),
+      transition('* => *', animate('500ms ease')),
+   
+    ]),
+    trigger('darkmodemenu', [
+      state('on', style({
+        opacity: 1,
+        filter: 'invert(1)'
+        
+      })),
+      state('off', style({
+      
+        
+        
+      })),
+      transition('* => *', animate('500ms ease')),
+   
+    ]),
+    trigger('hideall', [
+      state('on', style({
+        opacity: 0,
+        
+      })),
+      state('off',   style({
+        opacity: 1,
+        
+        
+      })),
+      transition('* => *', animate('500ms ease')),
+   
     ])
   ]
 
@@ -77,8 +130,53 @@ export class AppComponent {
   light: boolean = false;
   menu = true;
   isMenu = "hide"
-
+  dot = true;
+  twitternotif = true;
+  healthnotif = true;
+  messagenotif = true;
+  textvisible = false;
+  tweetvisible = false;
+  darkmode = false;
+  hideall = false;
   
+
+  hideAll(){
+    this.hideall = !this.hideall;
+
+  }
+
+
+ dark(){
+  this.darkmode =!this.darkmode;
+}
+
+  text(){
+   this.messagenotif = false;
+   this.textvisible = !this.textvisible;
+  
+  }
+
+  tweet(){
+    this.twitternotif = false;
+    this.tweetvisible = !this.tweetvisible;
+   
+   }
+
+  read(choice: string){
+    console.log(choice);
+    if(choice === "twitter"){
+      this.twitternotif = false;
+      this.tweetvisible = true;
+    }
+    else if(choice === "messages"){
+      this.messagenotif = false;
+      this.textvisible = true;
+    }
+    else if(choice === "health"){
+      this.healthnotif = false;
+    }
+   
+  }
 
 
   hideMenu(){
@@ -146,7 +244,7 @@ export class AppComponent {
 
 
   hide(choice: string){
-    console.log(choice);
+   
 
     this.visible = true;
 

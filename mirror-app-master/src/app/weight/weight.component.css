@@ -3,7 +3,7 @@
     height: 420px;
     border-radius: 20px;
     /* border: 1px solid #707070; */
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.0);
     flex-wrap: wrap;
     display: flex;
     flex-direction: row;

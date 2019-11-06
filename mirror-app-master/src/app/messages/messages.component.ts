@@ -12,25 +12,29 @@ export class MessagesComponent implements OnInit {
   private p5: any;
   private sketch;
 
+
   constructor() { }
 
   ngOnInit() {
     this.drawSketch();
   }
 
+
+
   drawSketch(){
     let title, button;
+    let thin, reg, semi, bold;
+    let clicked; 
 
     this.sketch = (s) => {
 
       s.preload = () => {
-
         s.frameRate(60);
       }
 
       s.setup = () => {
         s.createCanvas(380, 360).parent('messages-canvas'); 
-        s.fill('rgba(255, 255, 255, 0.3)');
+        s.fill('rgba(255, 255, 255, 0.0)');
         s.noStroke();
         s.rect(0, 0, 380, 360, 15); // create backgorund rectangle
 
@@ -51,7 +55,10 @@ export class MessagesComponent implements OnInit {
         title = s.text('Messages', 120, 40);
 
         s.textSize(18);
+        
+        
         s.text('Can you pick up eggs at the store?', 40, 120);
+
         s.text('Hey!', 40, 220);
         s.text('I love you! Have a great day!', 40, 320);
 

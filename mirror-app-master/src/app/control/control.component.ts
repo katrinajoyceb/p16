@@ -22,8 +22,8 @@ export class ControlComponent implements OnInit {
       s.preload = () => {
         images[0] = s.loadImage('assets/sun.png');
         images[1] = s.loadImage('assets/settings.png');
-        images[2] = s.loadImage('assets/rotation_lock.png');
-        images[3] = s.loadImage('assets/camera.png');
+        images[2] = s.loadImage('assets/expand.png');
+        images[3] = s.loadImage('assets/flashlight.png');
         img_black_tint = s.loadImage('assets/black_tint.png');
         image_round = s.loadImage('assets/round.png');  
     }
@@ -45,10 +45,10 @@ export class ControlComponent implements OnInit {
         s.fill(255, 255, 255);
 
         s.image(img_black_tint, 80, 5, 60, 60);
-        s.image(images[0], 93, 18, 35, 35);
+        s.image(images[3], 93, 18, 35, 35);
 
         s.image(img_black_tint, 2*80, 5, 60, 60);
-        s.image(images[1], 173, 18, 35, 35);
+        s.image(images[0], 173, 18, 35, 35);
 
         s.image(img_black_tint, 3*80, 5, 60, 60);
         s.image(images[2], 253, 18, 35, 35);

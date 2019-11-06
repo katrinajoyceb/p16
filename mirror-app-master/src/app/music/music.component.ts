@@ -36,7 +36,7 @@ export class MusicComponent implements OnInit {
 
       s.setup = () => {
         s.createCanvas(390, 165).parent('music-canvas'); 
-        s.fill('rgba(0, 0, 0, 0.4)');
+        s.fill('rgba(0, 0, 0, 0.0)');
         s.noStroke();
         s.rect(0, 0, 390, 165, 15);
 
